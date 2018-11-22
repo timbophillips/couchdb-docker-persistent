@@ -2,7 +2,7 @@
 # Tim Phillips
 # VERSION 0.1
 
-FROM couchdb as couchdb-cors3
+FROM couchdb as couchdb-cors-persistent
 
 RUN echo "[chttpd]" >> /opt/couchdb/etc/local.d/local.ini
 RUN echo "bind_address = any" >> /opt/couchdb/etc/local.d/local.ini
